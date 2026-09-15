@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {"id":"environment","label":"Environmental sciences","items":[
+      {"educationId":"msc","lines":["MSc","Biosystems","Engineering"]},
+      {"educationId":"bsc","lines":["BSc","Water Resources","& Environmental","Engineering"]},
+      {"educationId":"resilience","lines":["Urban Resilience","& Risk","Management"]}
+    ]},
+    {"id":"computing","label":"Computing & AI","items":[
+      {"educationId":"data-analysis","lines":["Data","Analysis"]},
+      {"educationId":"data-science","lines":["Data","Science"]},
+      {"educationId":"ai","lines":["Artificial","Intelligence","Engineering"]},
+      {"educationId":"vision","lines":["MBA","Computer Vision","PUC-Rio"]}
+    ]}
+  ],
+  "bridges":[
+    {"educationId":"cities","lines":["Smart Cities","Technology & Innovation"]},
+    {"educationId":"climatematch","lines":["Computational Tools","for Climate Science"]}
+  ]
+}

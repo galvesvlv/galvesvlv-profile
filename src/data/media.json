@@ -1,0 +1,5 @@
+{
+  "portrait": {"src":"public/images/portraits/profile.jpeg","alt":"Portrait of Vitor Luiz Victalino Galves","placeholder":"Your portrait here"},
+  "cover": {"src":"public/images/stories/cover_page.png","alt":"Climate and environmental research landscape"},
+  "zoey": {"src":"public/images/zoey/zoey.png","alt":"Zoey, Vitor’s dog and the inspiration behind Zoey AI","placeholder":"A little space for Zoey","caption":"Meet Zoey, my dog and ever-present research companion. She makes every workday brighter — so it felt only right to name my helpful assistant after her."}
+}

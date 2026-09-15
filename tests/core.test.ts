@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {retrieve} from '../src/ai/retrieval';
+import {selectPublications} from '../src/components/publications';
+import {validatePayload} from '../worker/cloudflare-worker';
+import worker from '../worker/cloudflare-worker';
+test('retrieval finds environmental AI and rejects unrelated questions',()=>{assert.ok(retrieve('conversational artificial intelligence RAG TRIA').some(x=>x.id==='experience-tria'));assert.equal(retrieve('banana cheesecake recipe').length,0);});
+test('publications match snapshot and sort and filter correctly',()=>{assert.equal(selectPublications('all','year').length,18);assert.equal(selectPublications('all','year')[0].year,2026);assert.equal(selectPublications('all','oldest')[0].year,2024);assert.equal(selectPublications('journal','year').length,5);assert.ok(selectPublications('all','year','MIROC6').length);});
+test('worker accepts only canonical sources and bounded questions',()=>{assert.ok(validatePayload({question:'What does Vitor research?',sourceIds:['profile']}));assert.equal(validatePayload({question:'test',sourceIds:['forged-source']}),null);assert.equal(validatePayload({question:'x'.repeat(1501),sourceIds:[]}),null);});
+test('worker rejects foreign origins and accepts preflight without API calls',async()=>{const env={ALLOWED_ORIGINS:'http://localhost:5173',GEMINI_MODEL:'unused',GEMINI_API_KEY:'',CHAT_RATE_LIMITER:{limit:async()=>({success:true})}};const forbidden=await worker.fetch(new Request('https://worker.test/api/chat',{headers:{Origin:'https://foreign.test'}}),env);assert.equal(forbidden.status,403);const preflight=await worker.fetch(new Request('https://worker.test/api/chat',{method:'OPTIONS',headers:{Origin:'http://localhost:5173'}}),env);assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),'http://localhost:5173');});

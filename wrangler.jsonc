@@ -1,0 +1,8 @@
+{
+ "$schema":"node_modules/wrangler/config-schema.json",
+ "name":"vitor-zoey-api",
+ "main":"worker/cloudflare-worker.ts",
+ "compatibility_date":"2025-09-01",
+ "vars":{"GEMINI_MODEL":"gemini-3.5-flash-lite","ALLOWED_ORIGINS":"http://localhost:5173,http://localhost:4173"},
+ "ratelimits":[{"name":"CHAT_RATE_LIMITER","namespace_id":"1001","simple":{"limit":5,"period":60}}]
+}

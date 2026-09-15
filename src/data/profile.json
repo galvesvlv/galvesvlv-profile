@@ -1,0 +1,15 @@
+{
+    "name":"Vitor Luiz Victalino Galves",
+    "fullName":"Vitor Luiz Victalino Galves",
+    "headline":"climate change · extreme events · hydrology · data science · artificial intelligence",
+    "biography":"MSc in Biosystems Engineering from Fluminense Federal University (UFF) and BSc in Water Resources and Environmental Engineering from the same institution. Currently pursuing an MBA in Computer Vision at the Pontifical Catholic University of Rio de Janeiro (PUC-Rio) and working as a researcher at the Laboratory for Monitoring and Modeling of Climate Systems (LAMMOC/UFF). Holds postgraduate specializations in Artificial Intelligence Engineering, Data Analysis and Data Science, Smart Cities and Urban Resilience and Risk Management, as well as international training in Computational Tools for Climate Science through the Climatematch Academy. Has contributed to projects in hydrology, environmental modeling, climate change, geoprocessing, and risk management. Experienced in geoprocessing, machine learning, and deep learning, with a focus on computer vision, multimodal models, and AI agents.",
+    "description":"Understanding a changing climate. Building tools for a more resilient future.",
+    "links":[
+        {"label":"GitHub","url":"https://github.com/galvesvlv"},
+        {"label":"Email","url":"mailto:vitor_luiz@id.uff.br"},
+        {"label":"Google Scholar","url":"https://scholar.google.com/citations?user=NnKfs9kAAAAJ"},
+        {"label":"ORCID","url":"https://orcid.org/0009-0001-1790-5880"},
+        {"label":"Lattes","url":"https://lattes.cnpq.br/2670343869265690"},
+        {"label":"LinkedIn","url":"https://www.linkedin.com/in/vitor-luiz-victalino-galves"}],
+        "updatedAt":"2026-09-14"
+    }

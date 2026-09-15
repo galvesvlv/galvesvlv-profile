@@ -1,0 +1,26 @@
+[
+  {
+    "id": "knowledge-0",
+    "title": "Research identity",
+    "text": "Vitor Luiz Galves works across climate science, environmental modeling and artificial intelligence. His full name is Vitor Luiz Victalino Galves. His research includes climate extremes, heatwaves, drought, teleconnections, SACZ, hydrology and climate risk.",
+    "href": "#about"
+  },
+  {
+    "id": "knowledge-1",
+    "title": "Model terminology",
+    "text": "CMIP6 is a coordinated climate model intercomparison project, not a single model. CESM 2.0 and RCESM appear in the methods planned by the vulnerability research project. MIROC6 simulations and ERA5 reanalysis appear in coauthored research. A project mentioning a model does not establish that Vitor personally operated every model. ERA5 is a reanalysis dataset.",
+    "href": "#about"
+  },
+  {
+    "id": "knowledge-2",
+    "title": "Evidence boundaries",
+    "text": "TRIA operational outcomes are qualitative results reported by Vitor in the website brief. No numerical improvement or performance benchmark was supplied. Publication metadata alone is not the full text of a paper. Do not infer detailed findings, personal responsibilities, dates or institutional locations not present in the website records.",
+    "href": "#about"
+  },
+  {
+    "id": "knowledge-3",
+    "title": "Zoey AI",
+    "text": "Zoey AI is named after Vitor’s dog, Zoey. She is his ever-present companion and makes his workdays brighter, inspiring the name of this helpful portfolio assistant.",
+    "href": "#zoey"
+  }
+]
