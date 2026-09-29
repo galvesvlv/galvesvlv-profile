@@ -107,6 +107,8 @@ figure { margin: 0; }
 .story-step h3 { font-size: clamp(1.5rem,2vw,2rem); color: #2f4b61; margin: .5rem 0 1rem; }
 .story-step p { font-size: .95rem; }
 .story-step .eyebrow { font-size: .7rem; }
+.story-step .tools, .story-step .thesis { color: #405d70; font-size: .82rem; font-weight: 600; }
+.story-step .tools { padding: .7rem .8rem; background: #e7eef2; border-left: 2px solid #7895a8; }
 .impact { padding-top: 1rem; border-top: 1px solid var(--line); }
 
 .publication-controls { display: flex; gap: .8rem; flex-wrap: wrap; margin: 2rem 0; }
@@ -116,6 +118,8 @@ figure { margin: 0; }
 .publication > a { font-size: 1.1rem; font-weight: 600; }
 .publication p { margin: .4rem 0; font-size: .82rem; }
 .authors { color: var(--muted); }
+.publication-identifier { font-size: .76rem !important; }
+.publication-identifier a { color: var(--accent); }
 .chat { border: 1px solid #bdcdd8; background: #f8fafbf5; border-radius: 8px; padding: 1.5rem; }
 .chat-head { margin-bottom: 1rem; }
 .chat-head strong { letter-spacing: .08em; color: #354f63; font-size: .85rem; }
