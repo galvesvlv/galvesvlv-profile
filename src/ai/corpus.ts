@@ -11,5 +11,5 @@ export const corpus: Chunk[] = [
   ...education.map(x => ({ id: `education-${x.id}`, title: x.title, text: `${x.institution}. ${x.period}. ${x.description} ${x.thesis ?? ''} ${x.project ?? ''} ${x.tags.join(', ')}`, href: `#education-${x.id}` })),
   ...experience.map(x => ({ id: `experience-${x.id}`, title: `${x.institution}: ${x.title}`, text: `${x.period}. ${x.description} ${x.impact} ${x.tools?.join(', ') ?? ''} ${x.tags.join(', ')}`, href: `#experience-${x.id}` })),
   ...research.map(x => ({ id: `research-${x.id}`, title: x.title, text: `${x.description} ${x.tags.join(', ')}`, href: '#about' })),
- ...publications.map(x => ({ id: `publication-${x.id}`, title: x.title, text: `${x.authors}. ${x.venue}. ${x.year}. Metadata only; full paper text is not included.`, href: `#publication-${x.id}` }))
+  ...publications.map(x => ({ id: `publication-${x.id}`, title: x.title, text: `${x.authors}. ${x.venue}. ${x.year}. ${x.doi ? `DOI: ${x.doi}. ` : ''}${x.url ? `URL: ${x.url}. ` : ''}Metadata only; full paper text is not included.`, href: `#publication-${x.id}` }))
 ];

@@ -4,7 +4,7 @@ test('portfolio navigation, publications and shared local chat',async({page})=>{
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
  await page.route('**/api/chat', route=>route.fulfill({json:{answer:'Test response from portfolio sources.'}}));
  await page.goto('/');await expect(page.getByRole('heading',{name:profile.name,exact:true})).toBeVisible();
- await expect(page.locator('.publication')).toHaveCount(18);
+ await expect(page.locator('.publication')).toHaveCount(20);
  await page.getByLabel('Publication type').selectOption('journal');await expect(page.locator('.publication')).toHaveCount(5);
  await page.locator('.hero').getByRole('button',{name:'How does he use artificial intelligence?',exact:true}).click();
  await expect(page.locator('.hero .message.assistant')).toContainText(/Local search|Test response from portfolio sources/);
